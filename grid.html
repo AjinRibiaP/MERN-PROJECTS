@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.i1 {
+    
+    grid-area: one;
+ }
+.i2 { 
+    grid-area: two; 
+}
+.i3 { 
+    grid-area: three; 
+}
+.i4 { 
+    grid-area: four; 
+}
+.i5 {
+     grid-area: five;
+     }
+
+.container {
+  display: grid;
+  grid-template-areas:
+    'one one one one one one'
+    'two three three three four four'
+    'two five five five five five';
+  gap: 10px;
+  background-color: black;
+  padding: 10px;
+}
+
+.container > div {
+  
+  text-align: center;
+  padding: 20px ;
+  font-size: 1cm;
+}
+</style>
+</head>
+<body>
+
+
+<div class="container">
+  <div class="i1" style="background-color:rgb(208, 137, 86)">1</div>
+  <div class="i2" style="background-color:rgb(101, 100, 100)">2</div>
+  <div class="i3" style="background-color:rgb(60, 116, 159)">3</div>  
+  <div class="i4" style="background-color:rgb(184, 99, 160)">4</div>
+  <div class="i5" style="background-color:rgb(27, 153, 39)">5</div>
+</div>
+
+</body>
+</html>
