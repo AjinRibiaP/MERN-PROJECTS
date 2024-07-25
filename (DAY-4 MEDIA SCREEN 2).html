@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+       }
+
+        .box {
+            height: 100px;
+            width: 20%;
+            margin: 0.5px;
+            gap:0.5cm;
+            display: flex;
+        }
+
+        @media (max-width: 1200px) {
+            .box {
+                width: 48%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .box {
+                width: 98%;
+            }
+        }
+    </style>
+    <title>MEDIA SCREENS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box" style="background-color:blue;"></div>
+        <div class="box" style="background-color:rgb(255, 55, 0);"></div>
+        <div class="box" style="background-color:rgb(2, 236, 2);"></div>
+        <div class="box" style="background-color:rgb(172, 31, 94);"></div>
+    </div>
+</body>
+</html>
